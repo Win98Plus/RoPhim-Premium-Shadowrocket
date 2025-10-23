@@ -9,8 +9,8 @@ if (typeof $response !== 'undefined' && typeof $done === 'function') {
       JSON.parse(b);
       b = b
         .replace(/("is_vip"|"is_verified")\s*:\s*false/g, '$1:true')
-        .replace(/("vip_expires_at")\s*:\s*0/g, '$1:253394586000')
-        .replace(/("coin_balance")\s*:\s*\d+/g, '"coin_balance":999999999');
+        .replace(/("vip_expires_at")\s*:\s*0/g, '$1:4378597855000')
+        .replace(/("coin_balance")\s*:\s*\d+/g, '"coin_balance":21081002');
     } catch (e) {}
   }
   $done({ body: b });
