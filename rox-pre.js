@@ -9,7 +9,7 @@ if (typeof $response !== 'undefined' && typeof $done === 'function') {
       JSON.parse(b);
       b = b
         .replace(/("is_vip"|"is_verified")\s*:\s*false/g, '$1:true')
-        .replace(/("vip_expires_at")\s*:\s*0/g, '$1:4378597855000')
+        .replace(/("vip_expires_at")\s*:\s*0/g, '$1:4378597855')
         .replace(/("coin_balance")\s*:\s*\d+/g, '"coin_balance":21081002');
     } catch (e) {}
   }
@@ -39,7 +39,7 @@ if (typeof $response !== 'undefined' && typeof $done === 'function') {
       JSON.parse(text); // check valid JSON
       return text
         .replace(/("is_vip"|"is_verified")\s*:\s*false/g, '$1:true')
-        .replace(/("vip_expires_at")\s*:\s*0/g, '$1:4378597855000')
+        .replace(/("vip_expires_at")\s*:\s*0/g, '$1:4378597855')
         .replace(/("coin_balance")\s*:\s*\d+/g, '"coin_balance":21081002');
     } catch {
       return text;
